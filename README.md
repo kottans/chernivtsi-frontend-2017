@@ -10,7 +10,17 @@
 
 **For whom?:** CS/ICT students, language-switchers, everyone who wants to learn frontend deeper.
 
-## Lectrures
+## 🗺 Location
+
+[Physical, Technical and Computer Sciences Institute of Yuriy Fedcovich Chernivtsi National University\
+Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
+
+[![image][location-image]][location-url]
+
+[location-image]: https://user-images.githubusercontent.com/3459374/32415614-1c5c082a-c245-11e7-9c8d-44bf55b40db2.png
+[location-url]: https://goo.gl/maps/deN3d4oVg2U2
+
+## 📚 Lectrures
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
 |:-------:|:------:|:---------|:--------------|:---------:|
@@ -28,7 +38,7 @@
 \** — we will invite a guest speaker not from our community or even city.\
 \*** — reviewing graduation tasks, summarizing course.
 
-## Workshops
+## 💻 Workshops
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides |
 |:-------:|:------:|:---------|:--------------|:---------:|
