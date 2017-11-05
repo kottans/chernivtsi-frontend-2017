@@ -21,13 +21,13 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
 |:-------:|:------:|:---------|:--------------|:---------:|
-| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan **[@denysdovhan]** | — |
-| 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena **[@maxkharena]** | — |
-| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny **[@denis-zavgorodny]** | — |
-| 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi **[@komarnitskyi]** | — |
-| 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny **[@denis-zavgorodny]** | — |
-| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi **[@kostyandrew]** | — |
-| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan **[@denysdovhan]** | — |
+| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | — |
+| 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | — |
+| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — |
+| 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — |
+| 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — |
+| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — |
+| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | — |
 | 1 Dec 2017 | 19:00–20:30 | **Outro** | _Guest lecturer_** | — |
 | 10 Dec 2017 | 19:00–20:30 | **Graduation** | —*** | — |
 
@@ -39,8 +39,8 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides |
 |:-------:|:------:|:---------|:--------------|:---------:|
-| 25 Nov 2017 | 11:00–15:00 | **Setting Up Development Environment** | Andrii Komarnitskyi **[@komarnitskyi]** | — |
-| 2 Dec 2017 | 11:00–15:00 | **Building React Application** | Andrii Kostetskyi **[@kostyandrew]** | — |
+| 25 Nov 2017 | 11:00–15:00 | **Setting Up Development Environment** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — |
+| 2 Dec 2017 | 11:00–15:00 | **Building React Application** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — |
 
 <!-- References -->
 
