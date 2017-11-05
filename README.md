@@ -1,6 +1,16 @@
 # Kottans Chernivtsi Frontend Course 2017
 
-# Lectrures
+**Duration:** 4 weeks (2 lectures every week 1.5h), 2 workshops every two weeks (4-6h).
+
+**Audience:** 15-25 people.
+
+**Requirements:** Basic programming skills, basic understanding of web technologies, Git, command line skills, basic knowledge of English (ability to read documentation/googling), perseverance, willing to learn, selfmanagement, willing to solve hometasks.
+
+**Would be great:** Basics of HTML/CSS, experience with JavaScript, understanding of client-server model.
+
+**For whom?:** CS/ICT students, language-switchers, everyone who wants to learn frontend deeper.
+
+## Lectrures
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
 |:-------:|:------:|:---------|:--------------|:---------:|
@@ -14,11 +24,11 @@
 | 1 Dec 2017 | 19:00–20:30 | **Outro** | _Guest lecturer_** | — |
 | 10 Dec 2017 | 19:00–20:30 | **Graduation** | —*** | — |
 
-\* — slides will be published and available online after lectures. <br />
-\** — we will invite a guest speaker not from our community or even city. <br />
+\* — slides will be published and available online after lectures.\
+\** — we will invite a guest speaker not from our community or even city.\
 \*** — reviewing graduation tasks, summarizing course.
 
-# Workshops
+## Workshops
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides |
 |:-------:|:------:|:---------|:--------------|:---------:|
