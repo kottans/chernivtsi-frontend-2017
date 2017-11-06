@@ -1,3 +1,5 @@
+![kottans-promo](https://user-images.githubusercontent.com/3459374/32435544-de31f35c-c2e9-11e7-8ea1-e01c98397e3d.png)
+
 # Kottans Chernivtsi Frontend Course 2017
 
 **Duration:** 4 weeks (2 lectures every week 1.5h), 2 workshops every two weeks (4-6h).
