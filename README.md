@@ -2,6 +2,10 @@
 
 # Kottans Chernivtsi Frontend Course 2017
 
+[![Telegram Chat][telegram-img]][telegram-url]
+[![Facebook Event][fb-img]][fb-url]
+[![Google Maps][maps-img]][location-url]
+
 **Duration:** 4 weeks (2 lectures every week 1.5h), 2 workshops every two weeks (4-6h).
 
 **Audience:** 15-25 people.
@@ -51,6 +55,14 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 [CC-BY-NC][cc-url] © ChernivtsiJS Team
 
 <!-- References -->
+
+[telegram-url]: https://t.me/joinchat/CMej8QsNdAVcJ98bOPnw8Q
+[telegram-img]: https://img.shields.io/badge/chat-telegram-32A2DB.svg?style=flat-square
+
+[fb-url]: https://www.facebook.com/events/524056337930021
+[fb-img]: https://img.shields.io/badge/event-facebook-3C5A96.svg?style=flat-square
+
+[maps-img]: https://img.shields.io/badge/location-google%20maps-29A263.svg?style=flat-square
 
 [location-image]: https://user-images.githubusercontent.com/3459374/32415614-1c5c082a-c245-11e7-9c8d-44bf55b40db2.png
 [location-url]: https://goo.gl/maps/deN3d4oVg2U2
