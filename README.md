@@ -27,7 +27,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
 |:-------:|:------:|:---------|:--------------|:---------:|
-| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | — |
+| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-introduction) |
 | 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | — |
 | 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — |
 | 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — |
