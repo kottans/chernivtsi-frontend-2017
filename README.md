@@ -25,21 +25,22 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 ## 📚 Lectrures
 
-| 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
-|:-------:|:------:|:---------|:--------------|:---------:|
-| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-introduction) |
-| 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | — |
-| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — |
-| 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — |
-| 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — |
-| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — |
-| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | — |
-| 1 Dec 2017 | 19:00–20:30 | **Outro** | _Guest lecturer_** | — |
-| 10 Dec 2017 | 19:00–20:30 | **Graduation** | —*** | — |
+| 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* | 📹 Video** |
+|:-------:|:------:|:---------|:--------------|:----------:|:----------:|
+| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-introduction) | [Link 🔗](https://youtu.be/xXrARBCjqJc) |
+| 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | [Link 🔗](http://html-css-kottans.surge.sh/) | [Link 🔗](https://youtu.be/7QMRJcAC4s0) |
+| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — | — |
+| 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — | — |
+| 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — | — |
+| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — | — |
+| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | — | — |
+| 1 Dec 2017 | 19:00–20:30 | **Outro** | _Guest lecturer_*** | — | — |
+| 10 Dec 2017 | 19:00–20:30 | **Graduation** | —**** | — | — |
 
 \* — slides will be published and available online after lectures.\
-\** — we will invite a guest speaker not from our community or even city.\
-\*** — reviewing graduation tasks, summarizing course.
+\** — videos will be published and available online after lectures.\
+\*** — we will invite a guest speaker not from our community or even city.\
+\**** — reviewing graduation tasks, summarizing course.
 
 ## 💻 Workshops
 
