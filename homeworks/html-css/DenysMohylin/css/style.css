@@ -84,3 +84,20 @@
 .lucky-button {
 	margin-left: 20px;
 }
+
+.serv-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+
+.lang {
+	margin-left: 7px;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
