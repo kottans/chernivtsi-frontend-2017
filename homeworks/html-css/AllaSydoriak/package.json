@@ -1,0 +1,23 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "Implementation of html-css homework",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "lessc": "lessc ./css/styles.less ./css/styles.css",
+    "watch:lessc": "onchange 'css/*.less' -- npm run lessc",
+    "watch:all": "parallelshell 'npm run watch:lessc' 'npm run lite'"
+  },
+  "author": "AllaSydoriak",
+  "license": "ISC",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "less": "^2.7.3",
+    "lite-server": "^2.3.0",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.2"
+  }
+}
