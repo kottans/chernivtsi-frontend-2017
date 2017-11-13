@@ -1,0 +1,222 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: small;
+	background: #fff;
+	color: #222;
+	font-family: ariel, sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	height: 55px;
+	align-items: center;
+}
+
+header ul {
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+}
+
+header ul li {
+	margin-left: 15px;
+	list-style: none;
+}
+
+header ul li a {
+	color: #222;
+	text-decoration: none;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+	text-decoration: underline;
+}
+
+header ul li img:hover{
+	opacity: .85;
+}
+
+header ul li a.sign-in-btn {
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background: #4285f4;
+	color: #fff;
+	border-radius: 2px;
+	padding: 7px 12px;
+}
+
+header ul li a.sign-in-btn:hover,
+header ul li a.sign-in-btn:focus {
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 80px - 55px);
+}
+
+main .wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .wrap .search {
+	background-color: #fff;
+	height: 44px;
+	vertical-align: top;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+main .wrap .search:hover {
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0, 0, 0, .08);
+	color: #222;
+}
+
+main .wrap .search input {
+	outline: none;
+	border: none;
+	width: 400px;
+	margin-right: 20px;
+	font-size: 16px;
+	color: #222;
+}
+
+main .wrap .search input::placeholder {
+	color: #757575;
+	font-style: italic;
+}
+
+
+main .wrap .search input:active {
+	color: #222;
+}
+
+main .wrap .search .voice {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat -3px 0;
+	background-size: 24px 24px;
+	background-position: center;
+	width: 18px;
+	height: 23px;
+}
+
+main .wrap .search-buttons {
+	margin-bottom: 15px;
+}
+
+main .wrap .search-buttons input {
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	color: #757575;
+	cursor: default;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 11px 4px;
+	min-width: 54px;
+	padding: 0 16px;
+	text-align: center;
+	height: 36px;
+	line-height: 27px;
+}
+
+main .wrap .search-buttons input:hover {
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}
+
+main .wrap .lang a {
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+main .wrap .lang a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background: #f2f2f2;
+}
+
+footer .fbar {
+	box-sizing: border-box;
+	padding: 0 30px;
+	border-top: 1px solid #e4e4e4;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .fbar span,
+footer .fbar a {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+footer .fbar a {
+	text-decoration: none;
+}
+
+footer .fbar a:hover {
+	text-decoration: underline;
+}
+
+footer .fbar .left a {
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+footer .fbar .right a {
+	margin-left: 20px;
+}
+
+@keyframes unicorn {
+	0% { transform: translateX(-100%); }
+	50% { transform: translateX(100vw); }
+	51% { transform: translateX(100vw) scaleX(-1); }
+	100% { transform: translateX(-100%) scaleX(-1); }
+}
+
+#space {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #0c0440 url(http://cdn.the-art-of-web.com/images/outerspace.jpg);
+	color: #fff;
+}
+div.unicorn {
+	position: absolute;
+	bottom: 10px;
+	animation-name: unicorn;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+}
+div.unicorn div {
+	width: 567px;
+	height: 413px;
+	background: url(https://i.giphy.com/media/WZmgVLMt7mp44/giphy.webp) no-repeat;
+}
