@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.header {
+  padding-top: 15px;
+}
+.nav {
+  list-style: none;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.nav li {
+  line-height: 28px;
+  width: 50px;
+  margin-left: 10px;
+}
+.nav__menu {
+  width: 20px;
+}
+
+.nav__sign {
+  display: inline-block;
+  border: 1px solid #4285f4;
+  background: #4285f4;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 28px;
+  border-radius: 2px;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+.main__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.main__logo {
+  height: 92px;
+  width: 272px;
+}
+.main__input {
+  width: 528px;
+  max-width: 528px;
+  height: 44px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2),
+    inset 0px -3px 4px rgba(255, 255, 255, 1);
+  border: 1px solid #eee;
+  font-size: 16px;
+  padding: 0 40px 0 20px;
+  outline: none;
+  box-sizing: border-box;
+  margin: 30px 0;
+}
+.input__wrap {
+  position: relative;
+}
+
+.input__wrap_micro {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-image: url("images/micro.png");
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.btn-group a {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #757575;
+  border-radius: 2px;
+  border: 1px solid #f2f2f2;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 10px 5px;
+  padding: 0 15px;
+}
+.footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  bottom: 0;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  line-height: 40px;
+}
+
+.footer__nav a {
+  color: #666;
+  padding-right: 10px;
+}
