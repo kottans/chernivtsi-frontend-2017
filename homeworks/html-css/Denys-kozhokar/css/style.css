@@ -1,0 +1,300 @@
+html,
+body{
+	width: 100%;
+	height: 100%;
+    font-family: arial,sans-serif;
+}
+
+.wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top_block{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 20px 30px 0 0;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.top_list{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.top_list_item{
+    margin-right: 15px;
+}
+
+.top_list_link{
+    color: #000;
+    opacity: 0.75;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    transition: all .5s;
+}
+
+.top_list_link:hover{
+    opacity: 0.85;
+    text-decoration: underline;
+}
+
+.options{
+    background: url(../images/option.png);
+    background-size: contain;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin: 0 20px;
+    opacity: 0.75;
+}
+
+.options:hover,
+.options:focus{
+    opacity: 1;
+}
+
+.login_link{
+    font-size: 13px;
+    font-weight:bold;
+    color: #fff;
+    line-height:28px;
+    display: inline-block;
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    outline: none;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=0);
+}
+
+.login_link:hover,
+.login_link:focus{
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+.main {
+    flex: 1 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.logo_block{
+    text-align: center;
+    margin: 89px 0 25px;
+    margin-top: 9vh;
+}
+
+.logo_block img{
+    max-width: 100%;
+    padding-top: 100px;
+    padding-top: 10vh;
+}
+
+.search_block{
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 90%;
+    margin: 0 auto 25px;
+    max-width: 570px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.search_block:hover,
+.search_block:focus{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.search_input{
+    border: none;
+    padding: 0 20px;
+    outline: none;
+    font-size: 15px;
+    line-height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.text_options{
+    line-height: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.text_options a{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.keyboard_icon{
+    background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) no-repeat center;
+    display: inline-block;
+    height: 11px;
+    width: 19px;
+    opacity: 0.55;
+}
+
+.keyboard_btn:hover .keyboard_icon{
+    opacity: .75;
+}
+
+.voice_icon{
+    background: url(../images/voice_icon.png) center no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 23px;
+    width: 17px;
+}
+
+.search_block_btns{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.search_btn{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.search_btn:hover,
+.search_btn:focus{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.language{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #222;
+}
+
+.language a:hover{
+    text-decoration: underline;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+}
+
+.country{
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    padding-left: 27px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footer_nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.menu--right{
+    margin-right: 30px;
+}
+
+.menu_item{
+    padding-left: 27px;
+}
+
+.menu_link{
+    color: #666;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+}
+
+.menu_link:hover{
+    text-decoration: underline;
+}
