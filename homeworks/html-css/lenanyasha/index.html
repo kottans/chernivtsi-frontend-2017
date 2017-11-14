@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google</title>
+	<link rel="shortcut icon" href="http://www.google.com/images/branding/product/ico/googleg_lodp.ico" type="image/png">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<ul>
+			<li>
+				<a href="#">Gmail</a>
+			</li>
+			<li>
+				<a href="#">Images</a>
+			</li>
+			<li>
+				<img src="http://www.myiconfinder.com/uploads/iconsets/ed559f9ab4ee6cec08ffde71c58a68af-grid.png" alt="" height="22px">
+			</li>
+			<li>
+				<a class="sign-in-btn" href="#">Sign In</a>
+			</li>
+		</ul>
+	</header>
+	<main>
+			<div class="wrap">
+			<img src="https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+			<div class="search">
+				<input id="input-search" type="text" placeholder="lenanyasha" name="search-input" />
+				<a href="#" class="voice"></a>
+			</div>
+			<div class="search-buttons">
+				<input type="submit" value="Google Search" id="search">
+				<input type="submit" value="I'm Feeling Lucky">
+			</div>
+			<div class="lang">
+				Google offered in:
+				<a href="#">українська</a>
+				<a href="#">русский</a>
+			</div>
+		</div>
+	</main>
+	<div id="space">
+		<div class="unicorn">
+			<div></div>
+		</div>
+	</div>
+	<footer>
+		<div class="fbar">
+			<span>Ukraine</span>
+		</div>
+		<div class="fbar">
+			<div class="left">
+				<a href="#">Advertising</a>
+				<a href="#">Business</a>
+				<a href="#">About</a>
+			</div>
+			<div class="right">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Settings</a>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.getElementById('search').onclick = () => {
+			const inputValue = document.getElementById('input-search').value;
+			if (inputValue === 'lenanyasha') {
+				document.getElementById('space').style.display = 'block';
+			}
+		}
+	</script>
+</body>
+</html>
