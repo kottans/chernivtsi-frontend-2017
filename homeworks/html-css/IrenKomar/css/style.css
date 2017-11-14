@@ -1,0 +1,99 @@
+.logo-block{
+    margin: 15px auto;
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 100px;
+}
+.search-input{
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+    border-right: none;
+    width: 93%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-button{
+    height: 45px;
+    width: 7%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid darkgrey;
+    border-left: none;
+}
+.search-button img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.search-form{
+    position: relative;
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 50%;
+    height: 45px;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.header-menu a{
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    height: 15px;
+    font-family: Arial;
+    padding: 5px 15px;
+    line-height: 35px;
+}
+.header-menu a img{
+    height: 35px;
+}
+section{
+    margin-top: 10%;
+}
+footer{
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.link-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+.center-block{
+    display: inline-block;
+    flex-grow: 2;
+}
+.link-block a{
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+    font-family: Arial;
+    padding: 10px 20px;
+}
+.lang-block{
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-bottom: none;
+}
+.lang-block span{
+    font-size: 16px;
+    color: rgba(0,0,0,.54);
+    font-family: Arial;
+}
