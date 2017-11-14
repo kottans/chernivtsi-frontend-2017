@@ -1,0 +1,140 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+.navigation {
+    text-align: right;
+    padding: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navigation a:hover {
+    border-bottom: 1px solid black;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 112px;
+    text-align: center;
+}
+
+.logo-img {
+    height: 92px;
+    width: 272px;
+}
+
+.logo-text {
+    position: relative;
+    left: 110px;
+    top: -35px;
+    color: #4285f4;
+    font-size: 16px;
+}
+
+.input-field {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0 8px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+@media only screen and (min-width:701px) {
+    .input-text {
+        width: 670px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .input-text {
+        width: 498px;
+    }
+}
+
+.input-text {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    height: 44px;
+}
+
+.voice-search {}
+
+.content-blocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 63px;
+}
+
+.search-buttons input {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.language-selected {
+    display: inline-block;
+    line-height: 28px;
+    font-size: small;
+}
+
+.footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.footer div {
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 40px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.footer a {
+    padding: 10px;
+}
+
+.footer a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, .54);
+}
+
+.country {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.links {
+    font-size: 13px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row
+}
+
+.divider {
+    flex-grow: 2;
+}
