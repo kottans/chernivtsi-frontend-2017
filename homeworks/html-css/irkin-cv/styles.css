@@ -1,0 +1,133 @@
+/*
+* Некоторые стили скопированы с оригинального сайта :)
+* вру. на самом деле почти все, которые касаются внешнего вида элементов.
+*/
+.main-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 24px;
+    margin-top: 157px;
+}
+.search-block {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    cursor: text;
+    font-size: 18px;
+    height: 44px;
+    line-height: 36px;
+    max-width: 672px;
+    outline: none;
+    position: relative;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 663px;
+    color: rgba(0, 0, 0, 0.38);
+}
+.search-block > input  {
+    color: rgba(0, 0, 0, 0.38);
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    right: 13px;
+    text-align: initial;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    visibility: inherit;
+    white-space: nowrap;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    padding-left: 8px;
+    top: 0;
+    width: 100%;
+}
+
+.search-block:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.search-block > input::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.38);}
+.search-block > input::-moz-placeholder          {color: rgba(0, 0, 0, 0.38);}/* Firefox 19+ */
+.search-block > input:-moz-placeholder           {color: rgba(0, 0, 0, 0.38);}/* Firefox 18- */
+.search-block > input:-ms-input-placeholder      {color: rgba(0, 0, 0, 0.38);}
+
+.search-block:after {
+    content: '';
+    background: url(images/microphone.png) no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    margin: 0 2% 0 0;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 863px) {
+    .search-block {
+        max-width: 510px;
+    }
+}
+@media screen and (max-width: 681px) {
+    .search-block {
+        max-width: 340px;
+    }
+}
+.search-buttons {
+   padding-top: 18px;
+}
+.search-buttons input {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    height: 36px;
+    line-height: 27px;
+}
+.search-buttons input:hover {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+.language-block {
+    font-size: small;
+    margin-bottom: 24px;
+    font-family: arial,sans-serif;
+    margin-top: 12px;
+}
+.lb-button {
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
+.lb-button:visited {
+    color: #609;
+}
