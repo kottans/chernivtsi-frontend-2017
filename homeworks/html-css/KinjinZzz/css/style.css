@@ -53,11 +53,11 @@ a{
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    justify-content: center;
     visibility: hidden;
-    width: 200px;
-    text-align: center;
+    width: 165px;
     border-radius: 2px;
-    padding: 8px 0;
+    padding: 8px 8px;
     position: absolute;
     top: 125%;
     left: 50%;
