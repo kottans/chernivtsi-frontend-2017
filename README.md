@@ -29,7 +29,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 |:-------:|:------:|:---------|:--------------|:----------:|:----------:|
 | 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-introduction) | [Link 🔗](https://youtu.be/xXrARBCjqJc) |
 | 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | [Link 🔗](http://html-css-kottans.surge.sh/) | [Link 🔗](https://youtu.be/7QMRJcAC4s0) |
-| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-ES6-basics/) | — |
+| 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-ES6-basics/) | [Link 🔗](https://youtu.be/i8NT2Z1lguk) |
 | 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — | — |
 | 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | — | — |
 | 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — | — |
