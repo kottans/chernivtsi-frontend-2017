@@ -20,38 +20,44 @@ function Item(num, product, price){
     this.qnt = 1
 }
 
-function UserCart () {}
-UserCart.prototype = new Cart;
+var cartProto = new Cart;
 
-UserCart.prototype.amount = function () {
-    var sum = 0;
-    this.goods.forEach(function(item, i, goods){
-        sum += (item.price * item.qnt);
-    });
-    return sum;
-};
-UserCart.prototype.updateQnt = function (id, qnt) {
-    this.goods.forEach(function(item, i, goods){
-        if(item.num == id){
-            item.qnt = qnt;
-        }
-    });
-};
+function UserCart () {
+    this.__proto__ = cartProto;
 
-UserCart.prototype.remove = function (id) {
-    this.goods.forEach(function(item, i, goods){
-        if(item.num == id){
-            goods.splice(i, 1);
-        }
-    });
-};
+    this.amount = function () {
+        var sum = 0;
+        this.goods.forEach(function(item, i, goods){
+            sum += (item.price * item.qnt);
+        });
+        return sum;
+    };
 
-UserCart.prototype.clear = function () {
-    this.goods = [];
-};
-UserCart.prototype.getAll = function () {
-    return this.goods;
-};
+    this.updateQnt = function (id, qnt) {
+        this.goods.forEach(function(item, i, goods){
+            if(item.num == id){
+                item.qnt = qnt;
+            }
+        });
+    };
+
+    this.remove = function (id) {
+        this.goods.forEach(function(item, i, goods){
+            if(item.num == id){
+                goods.splice(i, 1);
+            }
+        });
+    };
+
+    this.clear = function () {
+        this.goods = [];
+    };
+    this.getAll = function () {
+        return this.goods;
+    };
+}
+
+
 
 // Test
 const cart = new UserCart();
