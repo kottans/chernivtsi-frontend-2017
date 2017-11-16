@@ -15,7 +15,7 @@ function Item(id, name, amount) {
 }
 
 function UserCart() {}
-UserCart.prototype = new Cart();
+UserCart.prototype = Cart.prototype;
 UserCart.prototype.amount = function () {
   let sum = 0;
   for(let i in this.goods) {
@@ -26,10 +26,7 @@ UserCart.prototype.amount = function () {
 UserCart.prototype.updateQnt = function (id, amount) {
   let item;
   for (let i in this.goods) {
-    if (this.goods[i].id == id) item = this.goods[i];
-  }
-  for (let i = 0; i < amount - 1; i++) {
-    this.goods.push(item);
+    if (this.goods[i].id == id) this.goods[i].amount *= amount;
   }
 }
 UserCart.prototype.remove = function (id) {
