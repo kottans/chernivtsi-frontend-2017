@@ -3,6 +3,7 @@
 # Kottans Chernivtsi Frontend Course 2017
 
 [![Telegram Chat][telegram-img]][telegram-url]
+[![YouTube][youtube-img]][youtube-url]
 [![Facebook Event][fb-img]][fb-url]
 [![Google Maps][maps-img]][location-url]
 
@@ -64,6 +65,9 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 [fb-img]: https://img.shields.io/badge/event-facebook-3C5A96.svg?style=flat-square
 
 [maps-img]: https://img.shields.io/badge/location-google%20maps-29A263.svg?style=flat-square
+
+[youtube-url]: https://www.youtube.com/playlist?list=PLt-pAIa9BS40LQd446bI8FYQouCehDJpL
+[youtube-img]: https://img.shields.io/badge/videos-youtube-FC0D1C.svg?style=flat-square
 
 [location-image]: https://user-images.githubusercontent.com/3459374/32415614-1c5c082a-c245-11e7-9c8d-44bf55b40db2.png
 [location-url]: https://goo.gl/maps/deN3d4oVg2U2
