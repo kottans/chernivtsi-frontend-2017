@@ -9,42 +9,43 @@ Cart.prototype.add = function (item) {
 
 var cartParent = new Cart();
 
-function Item(id, name, price) {
+function Item(id, name, price, count = 1) {
     this.id = id;
     this.name = name;
     this.price = price;
+    this.count = count;
 };
 
-function UserCart(){
-    this.__proto__ = cartParent;
+function UserCart(){};
 
-    this.amount = function () {
+UserCart.prototype = cartParent;
+
+UserCart.prototype.amount = function () {
         var total = 0;
         for(var i = 0; i < this.goods.length; i++)
             total += this.goods[i].price * this.goods[i].count;
         return total;
     }
 
-    this.updateQnt = function(id, count){
+UserCart.prototype.updateQnt = function(id, count){
         for(var i = 0; i < this.goods.length; i++)
             if (this.goods[i].id == id)
                 this.goods[i].count = count;
     }
 
-    this.remove = function (id){
+UserCart.prototype.remove = function (id){
         for(var i = 0; i < this.goods.length; i++)
             if (this.goods[i].id == id)
                 this.goods.splice(i, 1);
     }
 
-    this.clear = function(){
+UserCart.prototype.clear = function(){
         this.goods = [];
     }
 
-    this.getAll = function(){
+UserCart.prototype.getAll = function(){
         return this.goods;
     }
-};
 // Test
 const cart = new UserCart();
 cart.add(new Item(1, 'Сhair', 2000));
