@@ -21,14 +21,14 @@ UserCart.prototype = Object.create(Cart.prototype);
 
 UserCart.prototype.amount = function () {
     const _quantity = [];
-    cart.goods.forEach(function (item, index) { _quantity.push(item.quantity) });
+    cart.goods.forEach(function (item) { _quantity.push(item.price) });
     return _quantity.reduce(function (_amount, _value) { return _amount + _value })
 }
 
 UserCart.prototype.updateQnt = function (itemId, quantity) {
-    var tmp = cart.goods.forEach(function (item, index) {
+    cart.goods.forEach(function (item) {
         if (item.id == itemId) {
-            item.quantity *= quantity;
+            item.price *= quantity;
         }
     });
 }
@@ -36,7 +36,7 @@ UserCart.prototype.updateQnt = function (itemId, quantity) {
 UserCart.prototype.remove = function (itemId) {
     cart.goods.forEach(function (item, index, _goods) {
         if (item.id == itemId) {
-            arr.splice(_goods, 1)
+            _goods.splice(itemId - 1, 1)
         }
     });
 }
