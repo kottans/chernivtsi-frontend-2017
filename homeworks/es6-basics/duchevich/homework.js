@@ -13,26 +13,24 @@ Cart.prototype.add = function (item) {
  * UserCart...
  */
 
-function Item(num, product, price){
-    this.num = num,
+function Item(...product){
     this.product = product,
-    this.price = price,
     this.qnt = 1
 }
 
 function UserCart () {}
-UserCart.prototype = new Cart;
+UserCart.prototype = Cart.prototype;
 
 UserCart.prototype.amount = function () {
     var sum = 0;
     this.goods.forEach(function(item, i, goods){
-        sum += (item.price * item.qnt);
+        sum += (item.product[2] * item.qnt);
     });
     return sum;
 };
 UserCart.prototype.updateQnt = function (id, qnt) {
     this.goods.forEach(function(item, i, goods){
-        if(item.num == id){
+        if(item.product[0] == id){
             item.qnt = qnt;
         }
     });
@@ -40,7 +38,7 @@ UserCart.prototype.updateQnt = function (id, qnt) {
 
 UserCart.prototype.remove = function (id) {
     this.goods.forEach(function(item, i, goods){
-        if(item.num == id){
+        if(item.product[0] == id){
             goods.splice(i, 1);
         }
     });
@@ -55,6 +53,7 @@ UserCart.prototype.getAll = function () {
 
 // Test
 const cart = new UserCart();
+
 cart.add(new Item(1, 'Сhair', 2000));
 cart.add(new Item(2, 'Desk', 3000));
 cart.add(new Item(3, 'Sofa', 4000));
