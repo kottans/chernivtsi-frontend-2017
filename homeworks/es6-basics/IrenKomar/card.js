@@ -9,11 +9,10 @@ Cart.prototype.add = function (item) {
 
 var cartParent = new Cart();
 
-function Item(id, name, price, count = 1) {
+function Item(id, name, price) {
     this.id = id;
     this.name = name;
     this.price = price;
-    this.count = count;
 };
 
 function UserCart(){};
@@ -21,31 +20,44 @@ function UserCart(){};
 UserCart.prototype = cartParent;
 
 UserCart.prototype.amount = function () {
-        var total = 0;
-        for(var i = 0; i < this.goods.length; i++)
-            total += this.goods[i].price * this.goods[i].count;
-        return total;
-    }
+    var total = 0;
+    for(var i = 0; i < this.goods.length; i++)
+        total += this.goods[i].price;
+    return total;
+};
 
 UserCart.prototype.updateQnt = function(id, count){
-        for(var i = 0; i < this.goods.length; i++)
-            if (this.goods[i].id == id)
-                this.goods[i].count = count;
+    var newId = this.goods.length + 1;
+    var name = "";
+    var price = 0;
+    for (var i = 0; i < this.goods.length; i++){
+        if (this. goods[i].id == id){
+            name = this.goods[i].name;
+            price = this.goods[i].price;
+            break;
+        }
     }
+    if (name != ""){
+        for(var i = 1; i < count; i++){
+            this.add(new Item(newId, name, price));
+            newId++;
+        }
+    }
+};
 
 UserCart.prototype.remove = function (id){
-        for(var i = 0; i < this.goods.length; i++)
-            if (this.goods[i].id == id)
-                this.goods.splice(i, 1);
-    }
+    for(var i = 0; i < this.goods.length; i++)
+        if (this.goods[i].id == id)
+            this.goods.splice(i, 1);
+};
 
 UserCart.prototype.clear = function(){
-        this.goods = [];
-    }
+    this.goods = [];
+};
 
 UserCart.prototype.getAll = function(){
-        return this.goods;
-    }
+    return this.goods;
+};
 // Test
 const cart = new UserCart();
 cart.add(new Item(1, 'Сhair', 2000));
