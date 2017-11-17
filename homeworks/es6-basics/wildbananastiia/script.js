@@ -7,10 +7,10 @@ Cart.prototype.add = function (item) {
     this.goods.push(item);
 };
 
-function Item(id, name, quantity) {
+function Item(id, name, price) {
     this.id = id;
     this.name = name;
-    this.quantity = quantity;
+    this.price = price;
 }
 
 function UserCart() {
