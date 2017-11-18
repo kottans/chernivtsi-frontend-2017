@@ -1,0 +1,96 @@
+	.signB{
+		width: 80px;
+		height: 35px;
+		background: blue;
+		color: white;
+	}
+
+	.nav a{
+		color: black;
+	}
+
+	.offer{
+
+		padding-top: 15px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.twoB{
+		margin-right: 5px;
+		padding-top: 25px;
+		display: flex;
+		justify-content: center;
+	}	
+
+	.twoB button{
+		border: 1px solid #F5F5F5;
+		background-color: #F5F5F5;
+		border:none;
+		width: 130px;
+		height: 40px;
+		color: #757575;
+		font-weight: bold;
+		margin-right: 20px;
+	}
+
+	li{
+		display: flex;
+		padding: 10px;
+	}
+	a{
+		text-decoration: none;
+	}
+	
+	a:hover{
+		text-decoration: underline;
+	}
+	.icon{
+		padding-top: 120px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.top{
+		padding-right: 15px;
+		display: flex;
+		align-content: flex-end;
+		vertical-align: middle;
+		justify-content: flex-end;
+
+	}
+
+	.micro{
+		padding-bottom: 20px;
+		border: none; 
+		height: 32px;
+		width: 32px;
+
+	}
+
+	.search{
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0, 0 ,0, .08);
+		height: 20px;
+		width: 560px;
+		margin-top: 12px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		 
+		
+		
+	}
+
+
+	.inp{
+		height: 20px;
+		width: 512px;
+		border: none;
+
+	}
+	.inp:hover{
+		outline-style: none;
+	}
+	.center{
+		display: flex;
+		justify-content: center;
+	}
