@@ -7,38 +7,37 @@ Cart.prototype.add = function(item) {
     this.goods.push(item);
 };
 
-var cartProto = new Cart();
 
-function UserCart() {
-    this.amount = function() {
-        let am = 0;
-        for (let i = 0; i < this.goods.length; i++) {
-            am += (this.goods[i].price * this.goods[i].count);
+
+function UserCart() {}
+UserCart.prototype = new Cart();
+UserCart.prototype.amount = function() {
+    let am = 0;
+    for (let i = 0; i < this.goods.length; i++) {
+        am += (this.goods[i].price * this.goods[i].count);
+    }
+    return am;
+}
+UserCart.prototype.updateQnt = function(id, count) {
+    for (let i = 0; i < this.goods.length; i++) {
+        if (this.goods[i].id == id) {
+            this.goods[i].count = count;
         }
-        return am;
-    }
-    this.updateQnt = function(id, count) {
-        for (let i = 0; i < this.goods.length; i++) {
-            if (this.goods[i].id == id) {
-                this.goods[i].count = count;
-            }
-        }
-    }
-    this.remove = function(id) {
-        for (let i = 0; i < this.goods.length; i++) {
-            if (this.goods[i].id == id) {
-                this.goods.splice(i, 1);
-            }
-        }
-    }
-    this.clear = function() {
-        this.goods = [];
-    }
-    this.getAll = function() {
-        return this.goods;
     }
 }
-UserCart.prototype = cartProto;
+UserCart.prototype.remove = function(id) {
+    for (let i = 0; i < this.goods.length; i++) {
+        if (this.goods[i].id == id) {
+            this.goods.splice(i, 1);
+        }
+    }
+}
+UserCart.prototype.clear = function() {
+    this.goods = [];
+}
+UserCart.prototype.getAll = function() {
+    return this.goods;
+}
 
 function Item(id, name, price, count = 1) {
     this.id = id;
