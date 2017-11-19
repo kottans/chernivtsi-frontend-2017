@@ -1,6 +1,6 @@
 // Don't modify
-function Cart () {}
-Cart.prototype.add = function (item) {
+function Cart() {}
+Cart.prototype.add = function(item) {
     if (!this.goods) {
         this.goods = [];
     }
@@ -10,48 +10,47 @@ Cart.prototype.add = function (item) {
 // My code)
 
 function Item(id, name, price) {
-  this.id = id;
-  this.name = name;
-  this.price = price;
-  this.quontity = 1;
+    this.id = id;
+    this.name = name;
+    this.price = price;
 }
 
 function UserCart() {}
 
-UserCart.prototype = Object.create(Cart.prototype);
+UserCart.prototype = Cart.prototype;
 
-UserCart.prototype.amount = function () {
-  return this.goods.reduce(function(sum, current) {
-    return sum + current.price * current.quontity;
-  }, 0);
+UserCart.prototype.amount = function() {
+    return this.goods.reduce(function(sum, current) {
+        return sum + current.price;
+    }, 0);
 }
 
-UserCart.prototype.clear = function () {
-  this.goods = [];
+UserCart.prototype.clear = function() {
+    this.goods = [];
 }
 
-UserCart.prototype.getAll = function () {
-  return this.goods;
+UserCart.prototype.getAll = function() {
+    return this.goods;
 }
 
 
-UserCart.prototype.remove = function (id) {
-     this.goods.forEach(function (item, index, arr) {
-         if (item.id == id) {
-             arr.splice(index, 1);
-         }
-     });
- }
+UserCart.prototype.remove = function(id) {
+    this.goods.forEach(function(item, index, arr) {
+        if (item.id == id) {
+            arr.splice(index, 1);
+        }
+    });
+}
 
-UserCart.prototype.updateQnt = function (id, quontity) {
-  return this.goods.map(function (item) {
-    if (item.id === id){
-      item.quontity = quontity;
-      return item;
-    } else {
-      return item;
-    }
-  })
+UserCart.prototype.updateQnt = function(id, quontity) {
+    return this.goods.map(function(item) {
+        if (item.id === id) {
+            item.price *= quontity;
+            return item;
+        } else {
+            return item;
+        }
+    })
 }
 
 
@@ -64,7 +63,7 @@ let amount = cart.amount();
 if (amount === 9000) {
     console.log('Add done');
 } else {
-     console.error('Add error');
+    console.error('Add error');
 }
 cart.updateQnt(3, 10);
 cart.remove(2);
