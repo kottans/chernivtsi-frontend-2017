@@ -9,7 +9,7 @@ Cart.prototype.add = function (item) {
 function UserCart () {
 }
 
-UserCart.prototype = Object.create(Cart.prototype);
+UserCart.prototype = Cart.prototype;
 
 UserCart.prototype.amount = function() {
     return this.goods.reduce(function(sum, current) {
