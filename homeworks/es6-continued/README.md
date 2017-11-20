@@ -1,6 +1,6 @@
 # ES6 Continued
 
-In this homework you have 3 tasks: `UserCart` class, and `promisify` function.
+In this homework you have 3 tasks: `UserCart` class, Fibonacci generator and `promisify` function.
 
 ## Task 1: `UserCart` class
 
