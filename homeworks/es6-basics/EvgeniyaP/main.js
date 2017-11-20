@@ -1,61 +1,53 @@
-function Cart () {
+function Cart() {}
 
-}
-Cart.prototype.add = function (item) {
+Cart.prototype.add = function(item) {
     if (!this.goods) {
         this.goods = [];
     }
     this.goods.push(item);
 };
 
+function UserCart() {};
 
+UserCart.prototype = Cart.prototype;
 
-
-function Item (idNum, title, price) {
-	this.idNum = idNum;
-	this.title = title;
-	this.price = price;
-	this.qnt = 1;
+UserCart.prototype.amount = function() {
+    let totalCost = 0;
+    this.goods.forEach(function(item) {
+        totalCost += item.price;
+    });
+    return totalCost;
 };
 
-
-function UserCart () {
-	this.amount = function () {
-		let totalCost = 0;
-		this.goods.forEach(function(item) {
-			totalCost += (item.price * item.qnt); 
-		});
-		return totalCost;
-	};
-	
-	this.updateQnt = function(idNum, quantity) {
-		this.goods.forEach(function(item) {
-			if(item.idNum == idNum) {
-				item.qnt = quantity;
-			}
-		});
-	};
-
-	this.remove = function (idNum) {
-        this.goods.forEach(function(item, i, goods){
-            if(item.idNum == idNum){
-                goods.splice(i, 1);
-            }
-        });
-    };
-
-    this.clear = function () {
-        this.goods.length = 0;
-    };
-
-    this.getAll = function () {
-        return this.goods;
-    };
+UserCart.prototype.updateQnt = function(idNum, price) {
+    this.goods.forEach(function(item) {
+        if (item.idNum === idNum) {
+            item.price *= price;
+        }
+    });
 };
 
+UserCart.prototype.remove = function(idNum) {
+    this.goods.forEach(function(item, i, goods) {
+        if (item.idNum === idNum) {
+            goods.splice(i, 1);
+        }
+    });
+};
 
-UserCart.prototype = new Cart();
+UserCart.prototype.clear = function() {
+    this.goods.length = 0;
+};
 
+UserCart.prototype.getAll = function() {
+    return this.goods;
+};
+
+function Item(idNum, title, price) {
+    this.idNum = idNum;
+    this.title = title;
+    this.price = price;
+};
 
 // test
 const cart = new UserCart();
@@ -67,7 +59,7 @@ let amount = cart.amount();
 if (amount === 9000) {
     console.log('Add done');
 } else {
-     console.error('Add error');
+    console.error('Add error');
 }
 cart.updateQnt(3, 10);
 cart.remove(2);
