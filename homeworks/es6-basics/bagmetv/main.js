@@ -13,50 +13,63 @@ Cart.prototype.add = function (item) {
  * UserCart...
  */
 
-
- function Item (id, name, quote) {
+function Item (id, name, amount) {
     this.id = id;
     this.name = name;
-    this.quote = quote;
-} 
+    this.amount = amount;
+}
 
+function UserCart () {}
+
+    // linking prototypes
 UserCart.prototype = new Cart ();
 
-function UserCart () {
-
     // getting total quote/amount
-    this.amount = function () {
-        var total_quote = 0;
-        for (var i = 0; i < this.goods.length; i++) {
-            total_quote += this.goods[i].quote;
-        }
-        return total_quote;
-    };
+UserCart.prototype.amount = function () {
+    var total_amount = 0;
+    this.goods.forEach(function (item) {
+        total_amount += item.amount;
+    });
+    return total_amount;
+};
 
-    // updateQnt
-    // ???
+    // updating quantity
+UserCart.prototype.updateQnt = function (id, qnt) {
+    item = this.goods.filter(function (item) {
+        return item.id === id;});
+    item[0].amount *= qnt;
+};
+
+UserCart.prototype.updateQnt = function (id, amount) {
+    item = this.goods.filter(function (item) {
+        return item.id === id;});
+    item[0].amount *= amount;
+};
 
     // removing some item
-    this.remove = function (id) {
-        for (var i = 0; i < this.goods.length; i++) {
-            // looping through items and identifying id match
-            if (this.goods[i].id === id) {
-                this.goods.splice(i, 1);
-            }
+UserCart.prototype.remove = function (id) {
+    this.goods.forEach(function(item, i, goods){
+        if(this.goods[i].id === id){
+            goods.splice(i, 1);
         }
-    };
+    });
+};
+
+UserCart.prototype.remove = function(id){
+    this.goods = this.goods.filter(item => item.id !== id);
+};
 
     // clearing goods items
-    this.clear = function () {
-        this.goods.length = 0;
-    };
+UserCart.prototype.clear = function () {
+    this.goods.length = 0;
+};
 
     // getting all goods items
-    this.getAll = function () {
-        return this.goods;
-    };
+UserCart.prototype.getAll = function () {
+    return this.goods;
+};
 
-}
+
 
 
 // Test
