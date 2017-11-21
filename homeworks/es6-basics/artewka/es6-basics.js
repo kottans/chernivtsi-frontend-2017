@@ -32,20 +32,19 @@ UserCart.prototype.getAll = function () {
     return this.goods; 
     }
 
-UserCart.prototype.updateQnt = function (id, amount) {
+UserCart.prototype.updateQnt = function (id, price) {
     let item;
     for (let i in this.goods) {
         if (this.goods[i].id == id) 
-        this.goods[i].amount = amount;
+        this.goods[i].price *= price;
     }
 }
-    
 
 UserCart.prototype.remove = function (id) {
-for (let i in this.goods) {
-    if (this.goods[i].id == id) 
-    this.goods.splice(i, 1);
-}
+    for (let i in this.goods) {
+        if (this.goods[i].id == id) 
+        this.goods.splice(i, 1);
+    }
 }
 
 // Test
