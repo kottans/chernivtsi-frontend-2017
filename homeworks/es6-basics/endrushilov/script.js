@@ -9,37 +9,7 @@ Cart.prototype.add = function (item) {
 
 //My Code
 function UserCart() {
-    this.amount = function(){ 
-        var amount = 0;
-        for(var i = 0; i < this.goods.length; i++){             
-            amount += this.goods[i].price;
-        }        
-        return amount   
-    };
-    this.updateQnt = function(id_number, count){  
-        for(var i = 0; i < this.goods.length; i++){             
-            if(this.goods[i].id == id_number){
-                var this_elem = this.goods[i];
-            }    
-        }
-        for(var j = 1; j < count; j++){
-            this.goods.push(this_elem); 
-        }
-    };
-    this.remove = function(id_remove){
-        for(var i = 0; i < this.goods.length; i++){             
-            if(this.goods[i].id == id_remove){ 
-                this.goods.splice(i, 1);                   
-            }    
-        }
-    }; 
-    this.clear = function(){ 
-        this.goods.splice(0, this.goods.length); 
-    };
-    this.getAll = function(){
-        return this.goods
-    }; 
-}; 
+};
 function Item(id, name, price) {
     this.id = id,
     this.name = name,
@@ -48,6 +18,67 @@ function Item(id, name, price) {
 
 Item.prototype = new  UserCart();
 UserCart.prototype = new Cart();
+UserCart.prototype.amount = function(){
+    var amount = 0;
+    for(var i = 0; i < this.goods.length; i++){
+        amount += this.goods[i].price;
+    }
+    return amount
+};
+UserCart.prototype.updateQnt = function(id_number, count){
+    var this_elem;
+    for(var i = 0; i<this.goods.length; i++ ){
+        if(this.goods[i].id === id_number){
+            this_elem = this.goods[i];
+        }
+    }
+    var this_elem_id = this_elem.id;
+    var count_this_elem = 0;
+    for(var j = 0; j<this.goods.length; j++){
+        if(this.goods[j].id === this_elem_id){
+            count_this_elem++
+        }
+    }
+    if(count_this_elem == count){
+        console.log("return");
+       return
+    }
+    if(count_this_elem < count){
+        count_this_elem = count -  count_this_elem;
+        var new_elements = [].fill.call({length: count_this_elem}, Object.assign(this_elem));
+        for(var k = 0; k<count_this_elem; k++){
+            this.goods.push(new_elements[k]);
+        }
+    }
+    else{
+        var count_to_remove = count_this_elem - count;
+        for(var l = 0; l < this.goods.length; l++){
+            if(count_to_remove !== 0){
+                if(this.goods[l].id === this_elem.id){
+                    this.goods.splice(l, 1);
+                    count_to_remove--;
+                }
+            }
+            else{
+                return
+            }
+
+        }
+    }
+};
+UserCart.prototype.remove = function(id_remove){
+    for(var i = 0; i < this.goods.length; i++){
+        if(this.goods[i].id == id_remove){
+            this.goods.splice(i, 1);
+        }
+    }
+};
+UserCart.prototype.clear = function(){
+    this.goods = [];
+};
+UserCart.prototype.getAll = function(){
+    return this.goods
+};
 //My Code end
 
 
