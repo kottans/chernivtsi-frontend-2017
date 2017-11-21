@@ -1,0 +1,76 @@
+ .link-block {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	align-items: center;
+ }
+ a {
+ 	color: #666666;
+ 	font-size: 14px;
+ 	margin: 7px;
+ 	text-decoration: none;
+ }
+ .logo-block {
+ 	display: flex;
+ 	justify-content: center;
+ 	padding-top: 140px;
+ }
+ .search-block {
+ 	border: none;
+ 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+ 	height: 40px;
+ 	width: 80%;
+ 	padding-left: 16px;
+ 	outline: none;
+ 	max-width: 520px;
+ 	position: relative;
+ 	display: inline-block;
+ 	font: 16px sans-serif;
+ }
+ .form-search {
+ 	display: flex;
+ 	justify-content: center;
+ 	margin: 23px;
+ }
+ .button {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ .search_button {
+ 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+ 	background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+ 	-webkit-border-radius: 2px;
+ 	-webkit-user-select: none;
+ 	background-color: #f2f2f2;
+ 	border: 1px solid #f2f2f2;
+ 	border-radius: 2px;
+ 	color: #757575;
+ 	display: block;
+ 	font-size: 13px;
+ 	font-weight: bold;
+ 	line-height: 36px;
+ 	margin: 11px 4px;
+ 	padding: 0 16px;
+ 	text-align: center;
+ }
+ .language {
+ 	color: #222222;
+ 	font-size: 15px;
+ 	margin-top: 20px;
+ 	text-align: center;
+ }
+ footer {
+ 	background-color: #f2f2f2;
+ 	border-top: 1px solid #e4e4e4;
+ 	bottom: 0;
+ 	display: flex;
+ 	flex-flow: column wrap;
+ 	width: 99.4%;
+ 	position: absolute;
+ }
+ .nav {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	line-height: 40px;
+ 	padding: 0 30px;
+ }
