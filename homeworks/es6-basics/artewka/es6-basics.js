@@ -12,15 +12,15 @@ function UserCart() {
   
 }
 
-function Item(id, name, amount) {
+function Item(id, name, price) {
     this.id = id;
     this.name = name;
-    this.amount = amount;
+    this.price = price;
 } 
 
 UserCart.prototype.amount = function() {
     return this.goods.reduce(function(prev,curr) {
-        return prev + curr.amount;
+        return prev + curr.price;
     },0);
 }
 
@@ -35,14 +35,16 @@ UserCart.prototype.getAll = function () {
 UserCart.prototype.updateQnt = function (id, amount) {
     let item;
     for (let i in this.goods) {
-        if (this.goods[i].id == id) this.goods[i].amount *= amount;
+        if (this.goods[i].id == id) 
+        this.goods[i].amount = amount;
     }
 }
     
 
 UserCart.prototype.remove = function (id) {
 for (let i in this.goods) {
-    if (this.goods[i].id == id) this.goods.splice(i, 1);
+    if (this.goods[i].id == id) 
+    this.goods.splice(i, 1);
 }
 }
 
