@@ -28,10 +28,10 @@ class UserCart extends Cart {
         return totalCost;
     };
 
-    updateQnt(idNum, price) {
+    updateQnt(idNum, qnt) {
         this.goods.forEach(function(item) {
             if (item.idNum === idNum) {
-                item.price *= price;
+                item.price *= qnt;
             }
         });
     };

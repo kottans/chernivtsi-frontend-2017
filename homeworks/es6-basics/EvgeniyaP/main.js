@@ -19,10 +19,10 @@ UserCart.prototype.amount = function() {
     return totalCost;
 };
 
-UserCart.prototype.updateQnt = function(idNum, price) {
+UserCart.prototype.updateQnt = function(idNum, qnt) {
     this.goods.forEach(function(item) {
         if (item.idNum === idNum) {
-            item.price *= price;
+            item.price *= qnt;
         }
     });
 };
