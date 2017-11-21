@@ -22,7 +22,7 @@ function Item (id, name, amount) {
 function UserCart () {}
 
     // linking prototypes
-UserCart.prototype = new Cart ();
+UserCart.prototype = Cart.prototype;
 
     // getting total quote/amount
 UserCart.prototype.amount = function () {
@@ -34,12 +34,6 @@ UserCart.prototype.amount = function () {
 };
 
     // updating quantity
-UserCart.prototype.updateQnt = function (id, qnt) {
-    item = this.goods.filter(function (item) {
-        return item.id === id;});
-    item[0].amount *= qnt;
-};
-
 UserCart.prototype.updateQnt = function (id, amount) {
     item = this.goods.filter(function (item) {
         return item.id === id;});
@@ -50,8 +44,7 @@ UserCart.prototype.updateQnt = function (id, amount) {
 UserCart.prototype.remove = function (id) {
     this.goods.forEach(function(item, i, goods){
         if(this.goods[i].id === id){
-            goods.splice(i, 1);
-        }
+            goods.splice(i, 1);}
     });
 };
 
