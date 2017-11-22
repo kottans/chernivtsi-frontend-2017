@@ -4,7 +4,7 @@ You should to implement HTML page with information about lectures from data sour
 
 **Points:**
 
-– you should be implement constructor `Schedule` whit the basic capabilities:
+- you should be implement constructor `Schedule` whit the basic capabilities:
   method get() should be recieve data from source
   method render() should be render data in html page
 
