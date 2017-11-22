@@ -58,42 +58,26 @@ function Item (id, name, price) {
 
 // Test
 const cart = new UserCart();
-// cart.add(new Item(1, 'Сhair', 2000));
-// cart.add(new Item(2, 'Desk', 3000));
-// cart.add(new Item(3, 'Sofa', 4000));
-//
-// let amount = cart.amount();
-//
-// if (amount === 9000) {
-//     console.log('Add done');
-// } else {
-//     console.error('Add error');
-// }
-
 cart.add(new Item(1, 'Сhair', 2000));
-console.log(cart.amount() === 2000);
-
-cart.updateQnt(1, 4);
-console.log(cart.amount() === 8000);
-
-cart.updateQnt(1, 2);
-console.log(cart.amount() === 4000);
-
-cart.updateQnt(1, 0);
-console.log(cart.getAll());
-console.log(cart.amount() === 0);
-//
-// amount = cart.amount();
-//
-// if (amount === 33000) {
-//     console.log('Modify done');
-// } else {
-//     console.error('Modify error');
-// }
-//
-// cart.clear();
-// if (cart.getAll().length === 0) {
-//     console.log('Clear done');
-// } else {
-//     console.error('Clear error');
-// }
+cart.add(new Item(2, 'Desk', 3000));
+cart.add(new Item(3, 'Sofa', 4000));
+let amount = cart.amount();
+if (amount === 9000) {
+    console.log('Add done');
+} else {
+     console.error('Add error');
+}
+cart.updateQnt(3, 10);
+cart.remove(2);
+amount = cart.amount();
+if (amount === 42000) {
+    console.log('Modify done');
+} else {
+    console.error('Modify error');
+}
+cart.clear();
+if (cart.getAll().length === 0) {
+    console.log('Clear done');
+} else {
+    console.error('Clear error');
+}
