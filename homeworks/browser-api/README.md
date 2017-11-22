@@ -1,18 +1,14 @@
 # Browser APIs and Patterns Homework
 
-You should to implement HTML page with information about lectures from [data source](https://denis-zavgorodny.github.io/slides-browser-api/homework/data/data.json).
+You have to implement HTML page with information about lectures from [data source](https://denis-zavgorodny.github.io/slides-browser-api/homework/data/data.json).
 
-**Points:**
-
-You should be implement constructor `Schedule` whit the basic capabilities:
+You should implement constructor `Schedule` with the basic capabilities:
     
-    - method get() should be recieve data from source    
-    - method render() should be render data in html page
-
-- you should be implement mechanism of caching data for client session 
-- you dont must use the third-party libraries
-- you can a write you code by ES5 or ES6 style
-
+1. method `get()` should recieve the data from data source
+1. method `render()` should render the data on html page
+1. you should implement mechanism of caching data for client session
+1. you shouldn't use the third-party libraries
+1. you can write you code in ES5 or ES6 style
 
 ## How to upload solution
 
