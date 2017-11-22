@@ -1,6 +1,6 @@
 # Browser APIs and Patterns Homework
 
-You should to implement HTML page with information about lectures from (data source)[https://denis-zavgorodny.github.io/slides-browser-api/homework/data/data.json].
+You should to implement HTML page with information about lectures from [data source](https://denis-zavgorodny.github.io/slides-browser-api/homework/data/data.json).
 
 **Points:**
 
