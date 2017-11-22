@@ -2,7 +2,7 @@
 
 Create React application by [create-react-app](https://github.com/facebookincubator/create-react-app)
 
-Create file tree view. Files structure in [`filetree.json`](https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/react-basic/filetree.js) file which located alongside.
+Create file tree view. Files structure in [`filetree.json`](https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/react-basic/filetree.json) file which located alongside.
 You need to fetch that file and display folder and file structure as dropdowns.
 
 ## How to upload solution
