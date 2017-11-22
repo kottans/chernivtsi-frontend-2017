@@ -26,7 +26,7 @@
 
         if (this.goods) {
             this.goods.forEach(function(element, index, array){
-                amount += element.cost * element.quantity;
+                amount += element.cost;
             });
         }
 
