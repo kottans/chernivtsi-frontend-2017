@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ES6 Basics Homework</title>
+"use strict";
 
-</head>
-<body>
-
-<script>
     // Don't modify
     function Cart () {}
     Cart.prototype.add = function (item) {
@@ -24,8 +15,7 @@
         this.id = id;
         this.name = name;
         this.cost = cost;
-        this.quantity = 1;
-     };
+    };
 
     function UserCart() {};
 
@@ -44,15 +34,30 @@
     };
 
     UserCart.prototype.updateQnt = function (id, quantity) {
-        id--;
 
-        this.goods[id].quantity = quantity;
+        var changedItemName = '',
+        changedItemCost = 0;
+
+        this.goods.forEach(function(element, index, array){
+            if(element.id === id){
+                changedItemName = element.name;
+                changedItemCost = element.cost;
+                array.splice(index, 1);
+            }
+        });
+
+        for (var i = quantity; i > 0; i--) {
+            this.add(new Item(id, changedItemName, changedItemCost));
+        }
+
     }
 
     UserCart.prototype.remove = function (id) {
-        id--;
-
-        this.goods.splice(id, 1);
+        this.goods.forEach(function(element, index, array){
+            if(element.id === id){
+                array.splice(index, 1);
+            }
+        });
     }
 
     UserCart.prototype.clear = function () {
@@ -74,23 +79,20 @@
     if (amount === 9000) {
         console.log('Add done');
     } else {
-         console.error('Add error');
-    }
-    cart.updateQnt(3, 10);
-    cart.remove(2);
-    amount = cart.amount();
-    if (amount === 42000) {
-        console.log('Modify done');
-    } else {
-        console.error('Modify error');
-    }
-    cart.clear();
-    if (cart.getAll().length === 0) {
-        console.log('Clear done');
-    } else {
-        console.error('Clear error');
-    }
-</script>
+       console.error('Add error');
+   }
+   cart.updateQnt(3, 10);
+   cart.remove(2);
+   amount = cart.amount();
+   if (amount === 42000) {
+    console.log('Modify done');
+} else {
+    console.error('Modify error');
+}
+cart.clear();
+if (cart.getAll().length === 0) {
+    console.log('Clear done');
+} else {
+    console.error('Clear error');
+}
 
-</body>
-</html>
