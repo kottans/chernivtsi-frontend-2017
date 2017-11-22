@@ -1,0 +1,87 @@
+{
+  "type": "root",
+  "data": [
+    {
+      "type": "dir",
+      "name": "home",
+      "data": [
+        {
+          "type": "dir",
+          "name": "username",
+          "data": [
+            {
+              "type": "file",
+              "name": "avatar.jpg"
+            },
+            {
+              "type": "dir",
+              "name": "New Folder (1)",
+              "data": [
+                {
+                  "type": "file",
+                  "name": "Referat.doc"
+                }
+              ]
+            },
+            {
+              "type": "dir",
+              "name": "New Folder (2)",
+              "data": [
+                {
+                  "type": "file",
+                  "name": "Lab.xls"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "dir",
+          "name": "donald",
+          "data": [
+            {
+              "type": "file",
+              "name": "speech.txt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "name": "system",
+      "data": [
+        {
+          "type": "dir",
+          "name": "office",
+          "data": [
+            {
+              "type": "file",
+              "name": "Readme.doc"
+            },
+            {
+              "type": "exec",
+              "name": "Word.exe"
+            },
+            {
+              "type": "exec",
+              "name": "SlideShow.exe"
+            }
+          ]
+        },
+        {
+          "type": "exec",
+          "name": "Windows.exe"
+        },
+        {
+          "type": "exec",
+          "name": "ScreenSaver.exe"
+        },
+        {
+          "type": "file",
+          "name": "config.ini"
+        }
+      ]
+    }
+  ]
+}
