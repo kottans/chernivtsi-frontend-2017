@@ -1,6 +1,10 @@
 # Browser APIs and Patterns Homework
 
-You have to implement HTML page with information about lectures from [data source](https://denis-zavgorodny.github.io/slides-browser-api/homework/data/data.json).
+You have to implement HTML page with information about lectures from [data source](https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/browser-api/data.js). Path to source:
+
+```
+https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/browser-api/data.js
+```
 
 You should implement constructor `Schedule` with the basic capabilities:
     
