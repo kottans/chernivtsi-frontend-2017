@@ -33,7 +33,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 | 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-ES6-basics/) | [Link 🔗](https://youtu.be/i8NT2Z1lguk) |
 | 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | [Link 🔗](https://komarnitskyi.github.io/js-vol-2/) | [Link 🔗](https://youtu.be/H5fBQ_LJOuU) |
 | 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-browser-api/) | [Link 🔗](https://youtu.be/M4XZKk2EaGo) |
-| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — | — |
+| 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | [Link 🔗](https://kostyandrew.github.io/react-basic/#/) | [Link 🔗](https://youtu.be/WaW3EgBIeFk) |
 | 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | — | — |
 | 1 Dec 2017 | 19:00–20:30 | **Outro** | _Guest lecturer_*** | — | — |
 | 10 Dec 2017 | 19:00–20:30 | **Graduation** | —**** | — | — |
