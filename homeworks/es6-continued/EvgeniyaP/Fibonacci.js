@@ -1,3 +1,4 @@
+
 function* fibonacci(n) {
     let [num1, num2, sum, count] = [1, 1, 0, 0];
     while (count < n) {
