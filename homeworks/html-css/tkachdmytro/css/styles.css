@@ -45,6 +45,10 @@
     display: flex;
     justify-content: center;
 }
+.logo > img {
+    padding-top:112px;
+}
+
 .form-search {
     display: flex;
     justify-content: center;
@@ -89,6 +93,7 @@
 
 .buttons {
     padding-top: 18px;
+    text-align: center;
 }
 
 .buttons input {
