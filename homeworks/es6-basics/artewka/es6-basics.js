@@ -32,13 +32,20 @@ UserCart.prototype.getAll = function () {
     return this.goods; 
     }
 
-UserCart.prototype.updateQnt = function (id, price) {
-    let item;
-    for (let i in this.goods) {
-        if (this.goods[i].id == id) 
-        this.goods[i].price *= price;
-    }
-}
+UserCart.prototype.updateQnt = function (Id, quantity) {
+        var mass = this.goods.filter(function(item) {
+            return item.id == Id;
+        });
+        quantity = quantity - mass.length;
+        if (quantity > 0){
+            var mass1 = Object.assign(mass[0]);
+            var mass2 = [].fill.call({length: quantity}, mass1);
+            this.goods.push.apply(this.goods, mass2);
+                 } else {
+                    mass.length = quantity;                
+                        this.goods.push.apply(this.goods, mass);    
+                    }
+                }
 
 UserCart.prototype.remove = function (id) {
     for (let i in this.goods) {
@@ -66,6 +73,8 @@ if (amount === 42000) {
 } else {
          console.error('Modify error');
 }
+console.log(cart);
+console.log(amount);
 cart.clear();
 if (cart.getAll().length === 0) {
     console.log('Clear done');
