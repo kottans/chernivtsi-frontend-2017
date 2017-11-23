@@ -46,14 +46,21 @@ class UserCart extends Cart {
     }
 
     updateQnt(id, quontity) {
-        return this.goods.map(function(item) {
-            if (item.id === id) {
-                item.price *= quontity;
-                return item;
-            } else {
-                return item;
+        let items = this.goods.filter(item => item.id === id);
+        let qnt = items.length;
+
+        let dif = quontity - qnt;
+
+        if (qnt < quontity) {
+            for (let i = 0; i < dif; i++) {
+                this.goods.push(items[0]);
             }
-        })
+        } else {
+            while (qnt != quontity) {
+                this.goods.pop(items[0]);
+                qnt--;
+            }
+        }
     }
 }
 
