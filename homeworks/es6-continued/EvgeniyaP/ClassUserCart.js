@@ -1,4 +1,3 @@
-
 class Cart {
     add(item) {
         if (!this.goods) {
