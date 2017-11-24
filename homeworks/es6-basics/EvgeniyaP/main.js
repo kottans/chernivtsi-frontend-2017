@@ -1,3 +1,4 @@
+//don't modify
 function Cart() {}
 
 Cart.prototype.add = function(item) {
@@ -7,6 +8,9 @@ Cart.prototype.add = function(item) {
     this.goods.push(item);
 };
 
+
+
+//my code
 function UserCart() {};
 
 UserCart.prototype = Cart.prototype;
@@ -19,13 +23,45 @@ UserCart.prototype.amount = function() {
     return totalCost;
 };
 
+
 UserCart.prototype.updateQnt = function(idNum, qnt) {
-    this.goods.forEach(function(item) {
-        if (item.idNum === idNum) {
-            item.price *= qnt;
-        }
-    });
+    
+    //get the quantity of specific product
+    let getQnt = function(idNum, goods) {
+        let count = 0;
+        for (let item in goods){
+            if (goods[item].idNum === idNum) {
+                count++;
+            };
+        };
+        return count;
+    };
+    
+    //get first object's index with the given ID
+    let getObjIndex = function(idNum, goods) {
+        for (let index in goods){
+            if (goods[index].idNum === idNum) {
+                return index;
+            };
+        };
+    };
+    
+    //get difference between the required quantity of goods and the current
+    let diff = qnt - getQnt(idNum, this.goods);
+    if (diff > 0) {
+        for (let i = 0; i < diff; i++) {
+            this.goods.push(Object.assign({}, this.goods[getObjIndex(idNum, this.goods)]))
+        };
+
+    }
+
+    else {
+        for (let i = 0; i < -diff; i++) {
+            this.goods.splice(getObjIndex(idNum, this.goods), 1);
+        };
+    }
 };
+
 
 UserCart.prototype.remove = function(idNum) {
     this.goods.forEach(function(item, i, goods) {
@@ -49,12 +85,12 @@ function Item(idNum, title, price) {
     this.price = price;
 };
 
-// test
+
+// test --> don't modify
 const cart = new UserCart();
 cart.add(new Item(1, 'Сhair', 2000));
 cart.add(new Item(2, 'Desk', 3000));
 cart.add(new Item(3, 'Sofa', 4000));
-
 let amount = cart.amount();
 if (amount === 9000) {
     console.log('Add done');
