@@ -1,4 +1,4 @@
-function Cart () {}
+﻿function Cart () {}
 Cart.prototype.add = function (item) {
             if (!this.goods) {
                 this.goods = [];
@@ -48,13 +48,7 @@ Cart.prototype.add = function (item) {
         UserCart.prototype.clear = function() {
             this.goods = this.goods.splice(0,this.length);
         }
-        /**
-         * You code here
-         * Item...
-         * UserCart...
-         */
-
-        // Test
+       
         const cart = new UserCart();
         cart.add(new Item(1, 'Сhair', 2000));
         cart.add(new Item(2, 'Desk', 3000));
