@@ -56,10 +56,12 @@ class UserCart extends Cart {
                 this.goods.push(items[0]);
             }
         } else {
-            while (qnt != quontity) {
-                this.goods.pop(items[0]);
-                qnt--;
-            }
+            this.goods.forEach((item, index, arr) => {
+                if (item.id === id && qnt != quontity) {
+                    arr.splice(index, 1);
+                    qnt--;
+                }
+            });
         }
     }
 }
