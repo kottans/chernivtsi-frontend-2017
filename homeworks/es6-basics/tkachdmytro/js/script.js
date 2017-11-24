@@ -20,34 +20,31 @@ function Item (number, name = 'items', price = 0) {
     this.price = price;
 };
 
-function UserCart () {
-    //this.__proto__ = Cart;
-    this.remove = function (item_index) {
-        item_index--;
-        if(item_index < 0) item_index = 0;
-        this.goods.splice(item_index, 1);
-    };
-    this.updateQnt = function (item_index, new_quantity) {
-        item_index--;
-        if(item_index < 0) item_index = 0;
-        this.goods[item_index].quantity = new_quantity;
-    };
-    this.getAll = function() {
-        return this.goods;
-    };
-    this.amount = function() {
-        var result = this.goods.reduce(function(sum, current) {
-            var current_amount = current.quantity*current.price;
-            return sum + current_amount;
-        }, 0);
-        return result;
-    };
-    this.clear = function() {
-        this.goods = [];
-    };
+function UserCart () {}
+UserCart.prototype = Cart.prototype;
+
+UserCart.prototype.remove = function (item_index) {
+    item_index--;
+    if(item_index < 0) item_index = 0;
+    this.goods.splice(item_index, 1);
+};
+UserCart.prototype.updateQnt = function (item_index, new_quantity) {
+    item_index--;
+    if(item_index < 0) item_index = 0;
+    this.goods[item_index].quantity = new_quantity;
+};
+UserCart.prototype.getAll = function() {
+    return this.goods;
+};
+UserCart.prototype.amount = function() {
+    return this.goods.reduce(function(sum, current) {
+        return sum + current.quantity*current.price;
+    }, 0);
+};
+UserCart.prototype.clear = function() {
+    this.goods = [];
 };
 
-UserCart.prototype = new Cart();
 
 // Test
 const cart = new UserCart();
