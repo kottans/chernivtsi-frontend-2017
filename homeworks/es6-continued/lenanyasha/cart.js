@@ -1,10 +1,11 @@
-function Cart () {}
-Cart.prototype.add = function (item) {
-    if (!this.goods) {
-        this.goods = [];
-    }
-    this.goods.push(item);
-};
+class Cart {
+    add (item) {
+        if (!this.goods) {
+            this.goods = [];
+        }
+        this.goods.push(item);
+    };
+}
 
 class UserCart extends Cart {
     amount() {
@@ -27,10 +28,6 @@ class UserCart extends Cart {
                 return item;
             }
         })
-    }
-
-    getAll() {
-        return this.goods;
     }
 
     getAll() {
