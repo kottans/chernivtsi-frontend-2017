@@ -44,12 +44,12 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 ## 💻 Workshops
 
-| 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* |
+| 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 📹 Video* |
 |:-------:|:------:|:---------|:--------------|:---------:|
-| 25 Nov 2017 | 11:00–15:00 | **Setting Up Development Environment** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | — |
+| 25 Nov 2017 | 11:00–15:00 | **Setting Up Development Environment** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** <br> Serhiy Boreyko **[@jestersunborn]** | [Link 🔗](https://youtu.be/FI69g5EI8Lw) |
 | 2 Dec 2017 | 11:00–15:00 | **Building React Application** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — |
 
-\* — slides will be published and available online after lectures.
+\* — videos will be published and available online after lectures.
 
 ## License
 
@@ -76,6 +76,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 [@maxkharena]: https://github.com/maxkharena
 [@komarnitskyi]: https://github.com/komarnitskyi
 [@kostyandrew]: https://github.com/kostyandrew
+[@jestersunborn]: https://github.com/jestersunborn
 
 [cc-url]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc-image]: https://img.shields.io/badge/License-CC%20BY%20NC%204.0-lightgrey.svg?style=flat-square
