@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+button{
+    background: #efefef;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    border: none;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+button:hover{
+    background: grey;
+}
+.data-item{
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    font-family: Arial;
+    font-size: 14px;
+}
