@@ -1,13 +1,16 @@
 // Don't modify
-function Cart () {}
-Cart.prototype.add = function (item) {
-    if (!this.goods) {
-        this.goods = [];
+class Cart {
+    constructor(){
     }
-    this.goods.push(item);
+    add(item){
+        if (!this.goods) {
+            this.goods = []; 
+        }
+        this.goods.push(item);
+    }
 };
  
-//My Code
+//My Code 
 class Item extends Cart{
     constructor(id, name, price){
         super() 
@@ -21,56 +24,54 @@ class UserCart extends Item{
     constructor(){
         super()
     }
-    amount(){
-        var amount = 0; 
-        for(var i = 0; i < this.goods.length; i++){             
+    amount(){   
+        let amount = 0; 
+        for(let i = 0; i < this.goods.length; i++){             
             amount += this.goods[i].price;
         }        
         return amount
-    }
+    } 
     updateQnt(id_number, count){
-        var this_elem;
-         for(var i = 0; i<this.goods.length; i++ ){
-             if(this.goods[i].id === id_number){
-                 this_elem = this.goods[i];
-             }
-         }
-         var this_elem_id = this_elem.id;
-         var count_this_elem = 0;
-         for(var j = 0; j<this.goods.length; j++){
-             if(this.goods[j].id === this_elem_id){
-                 count_this_elem++
-             }
-         }
-         if(count_this_elem == count){
-             console.log("return");
-            return
-         }
-         if(count_this_elem < count){
-             count_this_elem = count -  count_this_elem;
-             var new_elements = [].fill.call({length: count_this_elem}, Object.assign(this_elem));
-             for(var k = 0; k<count_this_elem; k++){
-                 this.goods.push(new_elements[k]);
-             }
-         }
-         else{
-             var count_to_remove = count_this_elem - count;
-             for(var l = 0; l < this.goods.length; l++){
-                 if(count_to_remove !== 0){
-                     if(this.goods[l].id === this_elem.id){
-                         this.goods.splice(l, 1);
-                         count_to_remove--;
-                     }
-                 }
-                 else{
-                     return
-                 }
-     
-             }
-         }
+        let this_elem;
+        this.goods.reduce(function(previousValue, currentItem, index){
+            if(currentItem.id === id_number){
+                this_elem = currentItem;   
+            }
+        }); 
+        let this_elem_id = this_elem.id;
+        let count_this_elem = 0;
+        this.goods.reduce(function(previousValue, currentItem, index){
+            if(currentItem.id === this_elem_id){
+                count_this_elem++
+            }
+        })
+        if(count_this_elem == count){
+            return 
+        }
+        if(count_this_elem < count){
+            let new_count_this_elem = count -  count_this_elem;
+            let new_elements = [].fill.call({length: new_count_this_elem}, Object.assign(this_elem));
+            for(let k = 0; k<new_count_this_elem; k++){
+                this.goods.push(new_elements[k]);
+            }
+        }
+        else{
+            let count_to_remove = count_this_elem - count;
+            for(let l = 0; l < this.goods.length; l++){   
+                if(count_to_remove !== 0){
+                    if(this.goods[l].id === this_elem.id){
+                        this.goods.splice(l, 1);
+                        count_to_remove--;
+                    }
+                }
+                else{
+                    return
+                }     
+            }
+        }
     }
     remove(id_remove){
-        for(var i = 0; i < this.goods.length; i++){             
+        for(let i = 0; i < this.goods.length; i++){             
         if(this.goods[i].id == id_remove){ 
             this.goods.splice(i, 1);                   
         }    
