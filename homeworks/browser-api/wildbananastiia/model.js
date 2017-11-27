@@ -25,7 +25,7 @@ class Schedule {
             wrapperSection.appendChild(titleText);
             container.appendChild(wrapperSection);
         });
-        this.cashe(lectures);
+        this.cache(lectures);
     }
 
     generateHTML(data) {
@@ -34,7 +34,7 @@ class Schedule {
         return node;
     }
 
-    cashe(lectures) {
+    cache(lectures) {
         lectures.map(lecture => sessionStorage.setItem('lectures', JSON.stringify(lecture)));
     }
 }
