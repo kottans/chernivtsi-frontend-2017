@@ -1,10 +1,11 @@
-function Cart () {}
-Cart.prototype.add = function (item) {
-    if (!this.goods) {
-        this.goods = [];
+class Cart () {
+    constructor(item){
+        if (!this.goods) {
+            this.goods = [];
+        }
+        this.goods.push(item);
     }
-    this.goods.push(item);
-};
+}
 
 class Item{
     constructor(id, name, price){
