@@ -3,24 +3,31 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
-    
-    this.state = {treeData: ""}
-    new Renderer().getTree().then(res=> this.setState({treeData: res}));
+
+    this.state = { treeData: [] };
+    new Renderer().getTree().then(res => this.setState({ treeData: res }));
+  }
+
+  renderView(tree) {
+    return (
+      <div key={tree.name}> <div>{tree.name}</div>
+        <div>{tree.data && tree.data.map(file => this.renderView(file))}</div>
+      </div>
+    )
   }
 
   render() {
-    let treeData;
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          {JSON.stringify(this.state.treeData)}
-        </p>
+        <div className="App-intro">
+          {this.renderView(this.state.treeData)}
+        </div>
       </div>
     );
   }
@@ -33,6 +40,5 @@ class Renderer {
     const url = 'https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/react-basic/filetree.json';
     return await fetch(url)
       .then(res => res.json())
-      .then(res => res.data)
   }
 }
