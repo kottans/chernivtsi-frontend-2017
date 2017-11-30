@@ -17,7 +17,7 @@ class Schedule {
         };
 
         let ul = document.getElementById("content"),
-            body = document.getElementsByTagName('body');
+            body = document.getElementsByTagName("body");
 
         data.forEach(function(article) {
             let li = createNode("li");
@@ -40,12 +40,12 @@ const url = 'https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/
 
 
 function getSchedule() {
-    let cache = localStorage.getItem("data");
+    let cache = sessionStorage.getItem("data");
     if (!cache) {
         schedule.get(url)
             .then(data => {
                 schedule.render(data);
-                localStorage.setItem("data", JSON.stringify(data));
+                sessionStorage.setItem("data", JSON.stringify(data));
             });
     } else {
         schedule.render(JSON.parse(cache));
