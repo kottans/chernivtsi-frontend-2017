@@ -35,7 +35,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 | 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-browser-api/) | [Link 🔗](https://youtu.be/M4XZKk2EaGo) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/browser-api) |
 | 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | [Link 🔗](https://kostyandrew.github.io/react-basic/#/) | [Link 🔗](https://youtu.be/WaW3EgBIeFk) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/react-basic) |
 | 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-react-continued) | [Link 🔗](https://youtu.be/D1uSIpdnWRg) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/react-continued) |
-| 1 Dec 2017 | 19:00–20:30 | **Outro** | Chernetsky Stanislav** <br /> **[@Stan-Che]** | — | — | — |
+| 1 Dec 2017 | 19:00–20:30 | **Outro** | Chernetsky Stanislav** <br /> **[@Stan-Che]** | — | [Link 🔗](https://youtu.be/FW081hmXWt8) | — |
 | 10 Dec 2017 | 19:00–20:30 | **Graduation** | —*** | — | — | — | 
 
 \* — slides, videos and homeworks will be published and available online after lectures.\
