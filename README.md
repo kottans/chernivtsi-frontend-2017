@@ -47,7 +47,7 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 📹 Video* |
 |:-------:|:------:|:---------|:--------------|:---------:|
 | 25 Nov 2017 | 11:00–15:00 | **Setting Up Development Environment** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** <br> Serhiy Boreyko **[@jestersunborn]** | [Link 🔗](https://youtu.be/FI69g5EI8Lw) |
-| 2 Dec 2017 | 11:00–15:00 | **Building React Application** | Andrii Kostetskyi <br /> **[@kostyandrew]** | — |
+| 2 Dec 2017 | 11:00–15:00 | **Building React Application** | Andrii Kostetskyi <br /> **[@kostyandrew]** | [Link 🔗](https://youtu.be/9HwfpdljJ9o) |
 
 \* — videos will be published and available online after lectures.
 
