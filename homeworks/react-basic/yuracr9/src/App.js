@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     fetch(this.state.myUrl)
       .then(response => {
         return response.json();
