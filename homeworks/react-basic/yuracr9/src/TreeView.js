@@ -17,7 +17,7 @@ class TreeView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: true
+      visible: false
     }
   }
 
@@ -35,7 +35,6 @@ class TreeView extends Component {
   render() {
     let childNodes;
     let classObj;
-    let style;
     let  myClass;
 
     if (this.props.node.data != null) {
@@ -51,19 +50,17 @@ class TreeView extends Component {
       myClass = this.classNames(classObj);
     }
 
-    if (!this.state.visible) {
-      style = {display: "none"};
-    }
-
     return (
-      <div>
+      <ul>
         <li onClick={this.toggle.bind(this)} className={myClass}>
           <img src={imgTypes[this.props.node.type]} />{this.props.node.name}
         </li>
-        <ul style={style}>
-          {childNodes}
-        </ul>
-      </div>
+        {this.state.visible &&
+          <ul>
+            {childNodes}
+          </ul>
+        }
+      </ul>
     )
   }
 }
