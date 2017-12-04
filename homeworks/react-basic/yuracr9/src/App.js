@@ -13,22 +13,24 @@ class App extends Component {
     }
   }
 
-  getData() {
+  componentDidMount() {
     fetch(this.state.myUrl)
       .then(response => {
         return response.json();
       })
       .then(response => {
-        this.state.data.push(response);
-        this.setState({ data: this.state.data[0] });
+        let arr = []; 
+        arr.push(response);
+        this.setState({ data: arr[0] });
       })
       .catch(e => console.log(e));
   }
 
   render() {
-    this.getData();
     return (
-      <TreeView node={this.state.data} />
+      <ul>
+        <TreeView node={this.state.data} />
+      </ul>
     );
   }
 }
