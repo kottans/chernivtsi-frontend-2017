@@ -4,7 +4,8 @@ import File from './File';
 
 export default class Node extends React.Component{
     render(){
-        var data = this.props.data.map((node, i) =>{
+        return <div className="block">
+                    {this.props.data.map((node, i) =>{
                         if(node.type === 'root'){
                             let name = 'root';
                             return <Folder key = {i} name = {name} data = {node.data}/>
@@ -13,9 +14,7 @@ export default class Node extends React.Component{
                             return <Folder key = {i} name = {node.name} data = {node.data}/>
                         if(node.type === 'file' || node.type === 'exec')
                             return <File key = {i} name = {node.name} />
-                    })
-        return <div className="block">
-                    {data}
+                    })}
                 </div>;    
     }
 }

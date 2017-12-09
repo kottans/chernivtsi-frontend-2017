@@ -9,7 +9,7 @@ export default class App extends Component {
 			data: []
 		}
 	}
-	componentDidMount(){
+	componentWillMount(){
 		fetch('https://raw.githubusercontent.com/kottans/chernivtsi-frontend-2017/master/homeworks/react-basic/filetree.json')
 			.then(response => response.json())
 			.then(data =>{
