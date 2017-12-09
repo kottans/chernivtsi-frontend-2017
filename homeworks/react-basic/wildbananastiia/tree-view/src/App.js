@@ -1,36 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
 
-    this.state = { treeData: [] };
+    this.state = { treeData: [], isDisplayChild: true };
     new Renderer().getTree().then(res => this.setState({ treeData: res }));
   }
 
-  renderView(tree) {
-    return (
-      <div key={tree.name}> <div>{tree.name}</div>
-        <div>{tree.data && tree.data.map(file => this.renderView(file))}</div>
-      </div>
-    )
+  render() {
+    //debugger
+    return <Folder treeData={this.state.treeData.data} name='root' />
   }
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <div className="App-intro">
-          {this.renderView(this.state.treeData)}
-        </div>
-      </div>
-    );
-  }
 }
 
 export default App;
@@ -41,4 +24,36 @@ class Renderer {
     return await fetch(url)
       .then(res => res.json())
   }
+}
+
+class Folder extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { isDisplayChild: true };
+  }
+
+  renderView(tree) {
+    if (tree) {
+      return tree.map(file => {
+        return (
+          <Folder key={file.name} treeData={file.data} name={file.name} />
+        )
+      })
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <div>
+          <div className='button-wrapper'>
+            {this.props.treeData && <button onClick={() => this.setState({ isDisplayChild: !this.state.isDisplayChild })}></button>}
+            <div>{this.props.name}</div>
+          </div>
+          {this.state.isDisplayChild && this.renderView(this.props.treeData)}
+        </div>
+      </div>
+    );
+  }
+
 }
