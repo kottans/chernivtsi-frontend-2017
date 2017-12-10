@@ -14,6 +14,7 @@ export default class Node extends React.Component{
                             return <Folder key = {i} name = {node.name} data = {node.data}/>
                         if(node.type === 'file' || node.type === 'exec')
                             return <File key = {i} name = {node.name} />
+                        return null;
                     })}
                 </div>;    
     }
