@@ -1,0 +1,49 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.treeview {
+    padding-left: 100px;
+}
+
+.treeview p {
+    text-align: left;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 72px;
+    color: #252b33;
+    background-size: 65px auto;
+    height: 9vh;
+}
+
+.file {
+    width: 60px;
+    height: 81px;
+    background-image: url('file.jpg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.close {
+    background-image: url('folder-outline-filled.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.open {
+    background-image: url('folder-open-outline.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
