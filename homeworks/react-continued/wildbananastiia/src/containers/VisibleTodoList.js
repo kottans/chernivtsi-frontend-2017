@@ -4,11 +4,11 @@ import TodoList from '../components/TodoList'
 
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
-    case 'SHOW_COMPLETED':
+    case 'completed':
       return todos.filter(t => t.completed)
-    case 'SHOW_ACTIVE':
+    case 'active':
       return todos.filter(t => !t.completed)
-    case 'SHOW_ALL':
+    case 'all':
     default:
       return todos
   }
@@ -16,7 +16,7 @@ const getVisibleTodos = (todos, filter) => {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    todos: getVisibleTodos(state.todos, ownProps.filter) // previously was getVisibleTodos(state.todos, state.visibilityFilter)
+    todos: getVisibleTodos(state.todos, ownProps.filter)
   }
 }
 
