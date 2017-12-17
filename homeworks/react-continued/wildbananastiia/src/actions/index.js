@@ -1,8 +1,8 @@
-let nextTodoId = 0
+const uuidv1 = require('uuid/v1');
 export const addTodo = text => {
   return {
     type: 'ADD_TODO',
-    id: nextTodoId++,
+    id: uuidv1(),
     text
   }
 }
