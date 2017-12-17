@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Folder name={this.state.data.type} data={this.state.data}></Folder>
+        <Folder name={this.state.data.type} data={this.state.data}/>
       </div>
     );
   }
