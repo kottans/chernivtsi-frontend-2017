@@ -18,7 +18,7 @@ export default class Dir extends React.Component{
              <div className="node">
                     <div className={this.state.open ? 'open' : 'closed'} onClick={this.toggle.bind(this)}></div>
                     <p>{this.props.name}</p>
-                    {this.state.open ? <TreeNode data = {this.props.data} /> : null}
+                    {this.state.open && <TreeNode data = {this.props.data} />}
             </div>
         )
     }
