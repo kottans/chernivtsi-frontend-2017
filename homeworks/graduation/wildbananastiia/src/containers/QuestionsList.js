@@ -1,11 +1,14 @@
 import { connect } from 'react-redux'
-import Questions from '../actions'
+import Questions, { saveAnswer } from '../actions'
 import QuestionsList from '../components/QuestionList'
 
 const mapDispatchToProps = dispatch => {
   return {
     fetchQuestions: () => {
       dispatch(Questions())
+    },
+    saveAnswer: (answer, index) => {
+      dispatch(saveAnswer(answer, index))
     }
   }
 }
