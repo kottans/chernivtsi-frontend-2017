@@ -10,8 +10,11 @@ class QuestionList extends Component {
     const questionsList = this.props.questions
     return (
       <div className="App">
+        <div> Number of correct answers: {questionsList.filter(question => {
+          return (question.answer === question.correct_answer)
+        }).length}</div>
         {questionsList.length && questionsList.map((question, index) =>
-          <Question question={question} id={index} saveAnswer={this.props.saveAnswer} />
+          <Question question={question} id={index} key={index} saveAnswer={this.props.saveAnswer} />
         )}
       </div>
     );

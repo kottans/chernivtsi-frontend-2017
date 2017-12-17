@@ -4,7 +4,7 @@ const questions = (state = [], action) => {
       return action.questions.results
     case 'CHECK_ANSWER':
       return state.map((question, index) => {
-        if (index == action.id) {
+        if (index === action.id) {
           question.answer = action.answer;
         }
         return question
