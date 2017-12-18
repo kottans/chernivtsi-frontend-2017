@@ -23,6 +23,7 @@ class Schedule {
     }
 }
 
+
 let createRow = function (text) {
     let tr = document.createElement('tr');
     let td = document.createElement('td');
