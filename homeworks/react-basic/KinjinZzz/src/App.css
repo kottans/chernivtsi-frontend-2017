@@ -1,0 +1,38 @@
+main{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+.node{
+  width: 64px;
+  padding-left: 32px;
+}
+.node p{
+  text-align: center;
+}
+.file{
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  background: url('file.png');
+}
+.closed{
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  background: url('closed.png');
+}
+.open{
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  background: url('open.png');
+  background-repeat: no-repeat;
+}
+.hide{
+  display: none;
+}
+.child{
+  padding-left: 70px;
+}
