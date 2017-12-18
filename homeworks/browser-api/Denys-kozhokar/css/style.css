@@ -1,0 +1,35 @@
+html,
+body{
+    font-family: arial,sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.schedule_title{
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 30px;
+}
+
+.schedule{
+    width: 100%;
+    font-size: 16px;
+}
+
+.schedule th{
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.schedule tr:nth-child(even){
+    background-color: #f6f8fa;
+}
+
+.schedule td{
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px 0;
+}
