@@ -13,7 +13,7 @@ export default class App extends Component {
 	componentWillMount() {
 		fetch(this.state.url)
 			.then(response => response.json())
-			.then(data => this.setState(data ? { data: this.state.data.concat(data) } : []));
+			.then(data => this.setState({data:[data]}));
 	}
 	render() {
 		return (
