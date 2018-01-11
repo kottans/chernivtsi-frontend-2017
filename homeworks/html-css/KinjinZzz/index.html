@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="img/googleg_lodp.ico" rel="shortcut icon">
+    <script>
+        // When the user clicks on popup <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <title>Google</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-flex-bar" id="nav_bar">
+                <li class="nav-link" id="gmail">
+                    <a href="https://mail.google.com/mail/">Gmail</a>
+                </li>
+                <li class="nav-link" id="images">
+                    <a href="https://www.google.com.ua/imghp?hl=uk&tab=wi">Зображення</a>
+                </li>
+                <li>
+                    <div class="popup" onclick="myFunction()" src="img/g_menu">
+                        <input type="image" class="g_menu" src="img/g_menu.png" alt="menu">
+                            <span class="popupmenu" id="myPopup">
+                                <ul>
+                                    <li>
+                                        <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_account.png" alt="account">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com.ua/webhp?tab=ww">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_search.png" alt="search">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://maps.google.com.ua/maps?hl=uk&tab=wl">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_maps.png" alt="maps">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/?gl=UA">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_youtube.png" alt="youtube">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://news.google.com.ua/nwshp?hl=uk&tab=wn">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_news.png" alt="news">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://mail.google.com/mail/?tab=wm">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_gmail.png" alt="gmail">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/?tab=wo">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_drive.png" alt="drive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/calendar?tab=wc">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_calendar.png" alt="calendar">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/?gpsrc=ogpy0&tab=wX">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_google+.png" alt="google+">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://translate.google.com.ua/?hl=uk&tab=wT">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_translate.png" alt="translate">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://photos.google.com/?tab=wq&pageId=none">
+                                            <input type="image" class="g_menu_icon" src="img/menu/g_photos.png" alt="photos">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </input>
+                    </div>
+                </li>
+                <li id="sign_in">
+                    <a href="https://accounts.google.com/signin">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="g_body">
+        <div class="google">
+            <a href="#" id="google_logo">
+                <img src="img/googlelogo_color_272x92dp.png" alt="Google logo"/>
+            </a>
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" id="search_form" placeholder="тут могла бути реклама котанів">
+                    <a href="#" class="search_microphone"><img src="img/google_mic.svg.png" alt="microphone" class="google_microphone"></a>
+                </input>
+            </form>
+        </div>
+        <div class="buttons">
+            <input type="button" value="Пошук Google" id="google_search">
+            <input type="button" value="Мені Пощастить" id="google_lucky">
+        </div>
+        <div class="language">
+            <a class="plain-text">Мова Google: </a>
+            <a href="#" class="plain-text">українська</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_nav">
+            <div class="left_nav">
+                <a class="plain-text" href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiBi--N-LnXAhUrG5oKHXEqB8AQkdQCCBA&url=https%3A%2F%2Fwww.google.com.ua%2Fintl%2Fuk_ua%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw0BwFMMXkEofWhC_wdTR8Rw">Реклама</a>
+                <a class="plain-text" href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiBi--N-LnXAhUrG5oKHXEqB8AQktQCCBE&url=https%3A%2F%2Fwww.google.com.ua%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3ffavBeEazn5Ua2hoel5lX">Business</a>
+                <a class="plain-text" href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiBi--N-LnXAhUrG5oKHXEqB8AQkNQCCBI&url=https%3A%2F%2Fwww.google.com.ua%2Fintl%2Fuk_ua%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1QsorOceA_QYSr52Vdw0gC">Про Google</a>
+            </div>
+            <div class="right_nav">
+                <a class="plain-text" href="https://www.google.com.ua/intl/uk_ua/policies/privacy/?fg=1">Конфіденційність</a>
+                <a class="plain-text" href="https://www.google.com.ua/intl/uk_ua/policies/terms/?fg=1">Умови</a>
+                <a class="plain-text" href="https://www.google.com.ua/preferences?hl=uk">Налаштування</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

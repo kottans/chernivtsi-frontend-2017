@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 20px;
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+main{
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.block{
+  width: 200px;
+  padding-left: 50px;
+}
+.block p{
+  text-align: left;
+}
+.file{
+  width: 50px;
+  height: 66px;
+  background: url('file.png');
+}
+.folder{
+  width: 100px;
+  height: 79px;
+  background: url('folder.png');
+}
+.folder-open{
+  width: 100px;
+  height: 79px;
+  background: url('openfolder.png');
+  background-repeat: no-repeat;
+}
+.hide{
+  display: none;
+}
+.child{
+  padding-left: 50px;
+}
