@@ -2,7 +2,6 @@
 
 # Kottans Chernivtsi Frontend Course 2017
 
-[![Telegram Chat][telegram-img]][telegram-url]
 [![YouTube][youtube-img]][youtube-url]
 [![Facebook Event][fb-img]][fb-url]
 [![Google Maps][maps-img]][location-url]
@@ -28,13 +27,13 @@ Rivnens'ka St, 16, Chernivtsi, 58000][location-url]
 
 | 📅 Date | 🕐 Time | 📝 Topic | 👨‍🏫 Lecturer | 🖥 Slides* | 📹 Video* | 🏡 Homework* |
 |:-------:|:------:|:---------|:--------------|:----------:|:----------:|:-----------:|
-| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-introduction) | [Link 🔗](https://youtu.be/xXrARBCjqJc) | — |
+| 8 Nov 2017 | 19:00–20:30 | **Introduction** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-introduction) | [Link 🔗](https://youtu.be/xXrARBCjqJc) | — |
 | 10 Nov 2017 | 19:00–20:30 | **HTML & CSS** | Max Kharena <br /> **[@maxkharena]** | [Link 🔗](http://html-css-kottans.surge.sh/) | [Link 🔗](https://youtu.be/7QMRJcAC4s0) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/html-css) |
 | 13 Nov 2017 | 19:00–20:30 | **ES6 Basics** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-ES6-basics/) | [Link 🔗](https://youtu.be/i8NT2Z1lguk) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/es6-basics) |
 | 15 Nov 2017 | 19:00–20:30 | **ES6 Continued** | Andrii Komarnitskyi <br /> **[@komarnitskyi]** | [Link 🔗](https://komarnitskyi.github.io/js-vol-2/) | [Link 🔗](https://youtu.be/H5fBQ_LJOuU) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/es6-continued) |
 | 20 Nov 2017 | 19:00–20:30 | **Browser APIs and Patterns** | Denis Zavgorodny <br /> **[@denis-zavgorodny]** | [Link 🔗](https://denis-zavgorodny.github.io/slides-browser-api/) | [Link 🔗](https://youtu.be/M4XZKk2EaGo) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/browser-api) |
 | 22 Nov 2017 | 19:00–20:30 | **React Basics** | Andrii Kostetskyi <br /> **[@kostyandrew]** | [Link 🔗](https://kostyandrew.github.io/react-basic/#/) | [Link 🔗](https://youtu.be/WaW3EgBIeFk) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/react-basic) |
-| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-2017-react-continued) | [Link 🔗](https://youtu.be/D1uSIpdnWRg) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/react-continued) |
+| 29 Nov 2017 | 19:00–20:30 | **React Continued** | Denys Dovhan <br /> **[@denysdovhan]** | [Link 🔗](https://denysdovhan.com/slides-kottans-chernivtsi-react-continued) | [Link 🔗](https://youtu.be/D1uSIpdnWRg) | [Link 🔗](https://github.com/kottans/chernivtsi-frontend-2017/tree/master/homeworks/react-continued) |
 | 1 Dec 2017 | 19:00–20:30 | **Outro** | Chernetsky Stanislav** <br /> **[@Stan-Che]** | [Link 🔗](http://purple-brake.surge.sh/) | [Link 🔗](https://youtu.be/FW081hmXWt8) | — |
 | 23 Dec 2017 | 12:00–13:00 | **Graduation** | —*** | — | — | — | 
 
