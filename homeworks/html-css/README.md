@@ -1,11 +1,11 @@
 # HTML & CSS Homework
 
-In this task you have to reproduce weather-app img example with HTML & CSS.
+I this task you have to reproduce the [Google Search](https://www.google.com) homepage with HTML & CSS.
 Notice that you should use flexboxes. When task will be solved, upload your solution here, to the folder with your GitHub username.
 
 **Example of layout:**
 
-![image](https://developers.google.com/web/fundamentals/design-and-ux/responsive/imgs/weather-1-2x.png?hl=ru)
+![image](https://user-images.githubusercontent.com/3459374/32693201-8ccd69b6-c72f-11e7-874d-e680716dfe33.png)
 
 ## How to upload solution
 
